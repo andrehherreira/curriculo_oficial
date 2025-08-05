@@ -1,14 +1,48 @@
+* {
+    margin: 0px;
+}
+
 html {
     font-size: 62.5%;
 }
 
+body {
+    margin: 0px;
+}
+
+header {
+    text-align: left;
+    font-size: 1.6rem;
+    background-color: black;
+    color: azure;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1.2rem;
+}
+
 header, nav {
     align-items: center;
-    text-align: center;
 }
 
 .navegacao, nav {
+    text-align: center;
     font-size: 1.2rem;
     display: grid;
     grid-auto-flow: column;
+    background-color: rgb(105, 102, 102);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0.4rem;
+}
+
+.navegacao {
+    cursor: pointer;
+    transition: color 0.9 ease, background-color 0.9 ease;
+}
+
+.navegacao:hover {
+    background-color: darkgray;
+    color: antiquewhite;
+}
+
+main {
+    background-color: bisque;
 }
