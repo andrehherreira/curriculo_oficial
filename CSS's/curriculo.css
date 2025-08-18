@@ -142,12 +142,24 @@ footer a:hover {
 }
 
 .projetos {
+    display: grid;
+    grid-template-areas: 
+    "imagem texto";
+    margin: 5rem 4rem;
     text-align: center;
     align-items: center;
-    border: #95A5A6 solid 1rem;
+    border: #95A5A6 solid 0.4rem;
+    border-radius: 15px;
+    padding: 3rem;
 }
 
 .imagens-projetos {
-    width: 1400px;
+    grid-area: imagem;
+    width: 78rem;
     border-radius: 12px;
+}
+
+.texto-projeto {
+    grid-area: texto;
+    font-size: 1rem;
 }
