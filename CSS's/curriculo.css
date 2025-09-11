@@ -59,6 +59,7 @@ nav h2 {
 }
 
 .navegacao:hover {
+    transition: background-color 0.1s linear 0s, transform 2s ease 0s;
     background-color: #3E5A73;
 }
 
