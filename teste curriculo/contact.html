@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — André Herreira</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: start;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: start;
+      gap: 16px;
+      padding: 20px;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      transition: all var(--transition-fast);
+    }
+
+    .contact-item:hover {
+      border-color: var(--accent);
+      transform: translateX(4px);
+    }
+
+    .contact-icon {
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(138,180,255,0.1);
+      border-radius: var(--radius-sm);
+      flex-shrink: 0;
+    }
+
+    .contact-details h3 {
+      font-size: 1.1rem;
+      margin-bottom: 4px;
+      color: var(--text);
+    }
+
+    .contact-details p {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+
+    .contact-details a {
+      color: var(--accent);
+      word-break: break-all;
+    }
+
+    .form-group {
+      margin-bottom: 24px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: var(--text);
+      font-size: 0.95rem;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px 16px;
+      background: var(--bg-elevated);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      color: var(--text);
+      font-size: 0.95rem;
+      font-family: inherit;
+      transition: all var(--transition-fast);
+    }
+
+    input:focus, textarea:focus {
+      outline: none;
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(138,180,255,0.1);
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 150px;
+    }
+
+    .form-submit {
+      width: 100%;
+    }
+
+    @media (max-width: 968px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header id="header">
+    <div class="logo">André Herreira</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="experience.html">Experience</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="section-header">
+        <h1 class="section-title">Get In Touch</h1>
+        <p class="section-subtitle">Have a project in mind or just want to chat? I'd love to hear from you</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--accent);">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </div>
+            <div class="contact-details">
+              <h3>Email</h3>
+              <p><a href="mailto:andre@example.com">andre@example.com</a></p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--accent);">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+            </div>
+            <div class="contact-details">
+              <h3>Phone</h3>
+              <p><a href="tel:+5541999999999">+55 (41) 99999-9999</a></p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--accent);">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <div class="contact-details">
+              <h3>Location</h3>
+              <p>Curitiba, Paraná, Brazil</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--accent);">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect x="2" y="9" width="4" height="12"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+            </div>
+            <div class="contact-details">
+              <h3>Social</h3>
+              <p>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a> • 
+                <a href="https://github.com" target="_blank">GitHub</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3 class="card-title mb-md">Send a Message</h3>
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required placeholder="Your name">
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required placeholder="What's this about?">
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required placeholder="Your message..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="section-header mt-lg">
+        <h2 class="section-title">Available For</h2>
+      </div>
+
+      <div class="grid grid-3">
+        <div class="card">
+          <h4 class="card-title">Freelance Projects</h4>
+          <p>Taking on select freelance opportunities that align with my expertise and interests.</p>
+        </div>
+
+        <div class="card">
+          <h4 class="card-title">Consulting</h4>
+          <p>Providing technical consulting for architecture design, code reviews, and best practices.</p>
+        </div>
+
+        <div class="card">
+          <h4 class="card-title">Collaborations</h4>
+          <p>Open to collaborating on innovative projects and open-source initiatives.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p class="footer-text">© 2025 André Herreira. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://github.com" target="_blank">GitHub</a>
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        <a href="mailto:andre@example.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 20) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    }, { passive: true });
+
+    // Form submission handler
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you for your message! I\'ll get back to you soon.');
+      this.reset();
+    });
+  </script>
+</body>
+</html>

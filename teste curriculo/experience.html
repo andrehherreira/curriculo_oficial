@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Experience — André Herreira</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header id="header">
+    <div class="logo">André Herreira</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="experience.html" class="active">Experience</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="section-header">
+        <h1 class="section-title">Professional Experience</h1>
+        <p class="section-subtitle">A journey through roles, responsibilities, and achievements that have shaped my career</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">2023 - Present</div>
+          <h3 class="timeline-title">Senior Full Stack Developer</h3>
+          <p class="timeline-subtitle">Tech Innovations Inc. • Remote</p>
+          <div class="timeline-content">
+            <p>Leading the development of enterprise-scale web applications serving 100K+ users. Architected microservices infrastructure that improved system reliability by 40% and reduced deployment time by 60%.</p>
+            <div class="badge-group">
+              <span class="badge">React</span>
+              <span class="badge">Node.js</span>
+              <span class="badge">PostgreSQL</span>
+              <span class="badge">AWS</span>
+              <span class="badge">Docker</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-date">2021 - 2023</div>
+          <h3 class="timeline-title">Full Stack Developer</h3>
+          <p class="timeline-subtitle">Digital Solutions Ltd. • Curitiba, BR</p>
+          <div class="timeline-content">
+            <p>Developed and maintained multiple client-facing applications with focus on performance and user experience. Collaborated with cross-functional teams to deliver features on tight deadlines while maintaining high code quality.</p>
+            <div class="badge-group">
+              <span class="badge">Vue.js</span>
+              <span class="badge">Python</span>
+              <span class="badge">MongoDB</span>
+              <span class="badge">REST APIs</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-date">2019 - 2021</div>
+          <h3 class="timeline-title">Frontend Developer</h3>
+          <p class="timeline-subtitle">StartUp Ventures • São Paulo, BR</p>
+          <div class="timeline-content">
+            <p>Built responsive web interfaces for startup products in fast-paced environment. Implemented design systems and component libraries that accelerated development velocity by 35%.</p>
+            <div class="badge-group">
+              <span class="badge">React</span>
+              <span class="badge">TypeScript</span>
+              <span class="badge">CSS/SASS</span>
+              <span class="badge">Figma</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-date">2018 - 2019</div>
+          <h3 class="timeline-title">Junior Web Developer</h3>
+          <p class="timeline-subtitle">Creative Agency • Curitiba, BR</p>
+          <div class="timeline-content">
+            <p>Started my professional journey building websites and web applications for diverse clients. Gained foundational experience in full development lifecycle from requirements gathering to deployment.</p>
+            <div class="badge-group">
+              <span class="badge">JavaScript</span>
+              <span class="badge">HTML/CSS</span>
+              <span class="badge">WordPress</span>
+              <span class="badge">PHP</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-header mt-lg">
+        <h2 class="section-title">Education</h2>
+      </div>
+
+      <div class="grid grid-2">
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <h3 class="card-title">Bachelor of Computer Science</h3>
+              <p class="card-meta">Federal University of Paraná • 2014 - 2018</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <p>Graduated with honors. Focused on software engineering, algorithms, and data structures. Completed senior thesis on web application performance optimization.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <h3 class="card-title">Certifications</h3>
+              <p class="card-meta">Continuous Learning</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <ul style="list-style: none; padding: 0; color: var(--text-muted);">
+              <li style="margin-bottom: 8px;">• AWS Certified Solutions Architect</li>
+              <li style="margin-bottom: 8px;">• Google Cloud Professional Developer</li>
+              <li style="margin-bottom: 8px;">• Advanced React Patterns</li>
+              <li>• Node.js Application Development</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p class="footer-text">© 2025 André Herreira. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://github.com" target="_blank">GitHub</a>
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        <a href="mailto:andre@example.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 20) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    }, { passive: true });
+  </script>
+</body>
+</html>
